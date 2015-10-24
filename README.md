@@ -21,10 +21,10 @@ Dataset Details : Kindly refer to the readme.txt that comes along with the raw d
 				
 				
 ## Table of Contents:
-1) Code Philosophy
-2) Code Overview
-3) Code Walkthrough
-4) Afterword
+1) Code Philosophy  
+2) Code Overview  
+3) Code Walkthrough  
+4) Afterword  
 
 
 ## 1. Code Philosopy:
