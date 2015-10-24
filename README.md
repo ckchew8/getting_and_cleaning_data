@@ -1,4 +1,4 @@
-# Readme for Run_Analysis.R
+# Readme for run_analysis.R
 
 Author			: ckchew8  
 Last Modified	: 24th of Oct 2015  
@@ -30,8 +30,8 @@ Dataset Details : Kindly refer to the readme.txt that comes along with the raw d
 ## 1. Code Philosopy:
 The philosophy when coding this assignment is that the code should be minimalist. This means:
 1) Code should only minimal libraries/packages.  
-2) Convenience and independence of code execution without having to rely on package availability in a cross platform scenario. 
-3) Automate the code with minimal human interaction needed. Basically, sit back, hit run and view the outcome:)
+2) Convenience and independence of code execution without having to rely on package availability in a cross platform scenario.   
+3) Automate the code with minimal human interaction needed. Basically, sit back, hit run and view the outcome:)  
 
 
 ## 2. Code Overview:
