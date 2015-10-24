@@ -73,11 +73,11 @@ This section is done to fulfil philosophy 3) i.e. to automate the code and to pr
 
 * The next step in this section would be to construct cross-platform paths to the data sets using the file.path() command. 3 crucial paths to access the main, test and train directory which will be used to read in data sets are constructed.
   
-* We then proceed to reading the data sets from the "./UCI HAR Dataset/test" & "./UCI HAR Dataset/train" without quotes folders. 3 data sets are read from the "train" without quotes folder where each data set represents the following:   
+* We then proceed to reading the data sets from the "./UCI HAR Dataset/test" & "./UCI HAR Dataset/train" without quotes folders. 3 data sets are read from the "train" without quotes folder where each data set represents the following:     
   
-  Subject : subject_train.txt     
-  Features: X_train.txt  
-  Activity: y_train.txt    
+  Subject : subject_train.txt       
+  Features: X_train.txt    
+  Activity: y_train.txt      
   
   Similar explanation is applicable for the importing of the datasets from the "test" without quotes folder.
 *  Note that "Inertial Signals" without quotes data set are not used as per David Hood's advice which can be found here:[link](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/?utm_medium=email&utm_source=other&utm_campaign=notifications.auto.4i9gpnGrEeWjsw782TsmrQ)
@@ -104,36 +104,33 @@ In this section, the code extracts all measurements with mean and standard devia
  
 ### 3: Use Descriptive Activity Names To Name The Activities
 
-This part reads in the activity labels from the file named "activity_labels.txt" and substitutes activities accordingly using a for loop to substitute the numerical values with the character values from the "activity_labels.txt" file. The code will loop through all rows of the "activity" without quotes column and replace the numerical values with the following convention:
-      
-			1 = WALKING  
-			2 = WALKING_UPSTAIRS  
-			3 = WALKING_DOWNSTAIRS  
-			4 = SITTING  
-			5 = STANDING  
-			6 = LAYING  
-This part of the code is obeying the principle of Tidy Data of making observations of a column to be more meaningful.
+This part reads in the activity labels from the file named "activity_labels.txt" and substitutes activities accordingly using a for loop to substitute the numerical values with the character values from the "activity_labels.txt" file. The code will loop through all rows of the "activity" without quotes column and replace the numerical values with the following convention:  
+			1 = WALKING    
+			2 = WALKING_UPSTAIRS    
+			3 = WALKING_DOWNSTAIRS    
+			4 = SITTING    
+			5 = STANDING    
+			6 = LAYING    
+This part of the code is obeying the principle of Tidy Data of making observations of a column to be more meaningful.  
   
 ### 4: Substitute Columns Names/Variable Names With Descriptive Variable Names
 
 This part of the code basically searches for column names and replacing them with the following character/word identifier.    
 
-* The substitution is done to obey the principle of tidy data to make variables with more descriptive & significant.  
-	1) Substitutes all column names beginning with "^t" without quotes, with "time" without quotes.
-	2) Substitutes all column names beginning with "^f" without quotes, with "frequency" without quotes.
-	3) Substitutes all column names containing the string "Acc" without quotes, with "accelerometer" without quotes.
-	4) Substitutes all column names containing the string "Gyro" without quotes, with "gyroscope" without quotes.
-	5) Substitutes all column names containing the string "Mag" without quotes, with "magnitude" without quotes.
-	6) Substitutes all column names containing the string "BodyBody" without quotes, with "body" without quotes.
+* The substitution is done to obey the principle of tidy data to make variables with more descriptive & significant.    
+	1) Substitutes all column names beginning with "^t" without quotes, with "time" without quotes.  
+	2) Substitutes all column names beginning with "^f" without quotes, with "frequency" without quotes.  
+	3) Substitutes all column names containing the string "Acc" without quotes, with "accelerometer" without quotes.  
+	4) Substitutes all column names containing the string "Gyro" without quotes, with "gyroscope" without quotes.  
+	5) Substitutes all column names containing the string "Mag" without quotes, with "magnitude" without quotes.  
+	6) Substitutes all column names containing the string "BodyBody" without quotes, with "body" without quotes.  
   
 * There's a few additional substitution to honor the spirit of tidy data whereby column names should not have any symbols such as "-" without quotes, "(" without quotes and ")" without quotes. Hence the following steps were taken:
 
-  1) Substitutes all column names containing the symbol "-" without quotes, 
-     with nothing which eliminates the "-" without quotes symbol.
-  2) Substitutes all column names containing the symbol "(" & ")" without quotes,
-     with nothing which eliminates the "-" without quotes symbol.
-* All substitution steps above were done using the gsub command. In addition, all column/variable names will be converted to lower case to prevent any mixed casing in a variable/column name.
-* A character to factor conversion was done on the "activity" without quotes column to conform to the tidy data principle that character columns should be converted to factor variable.
+  1) Substitutes all column names containing the symbol "-" without quotes, with nothing which eliminates the "-" without quotes symbol.  
+  2) Substitutes all column names containing the symbol "(" & ")" without quotes, with nothing which eliminates the "-" without quotes symbol.  
+* All substitution steps above were done using the gsub command. In addition, all column/variable names will be converted to lower case to prevent any mixed casing in a variable/column name.  
+* A character to factor conversion was done on the "activity" without quotes column to conform to the tidy data principle that character columns should be converted to factor variable.  
 
 ### 5: Create An Independent Tidy Data Set With The Average Of Each Variable For Each Activity & Each Subject
 
@@ -147,10 +144,10 @@ This part of the code basically searches for column names and replacing them wit
  
 * As with any work, we naturally would want to check if the output from 5) is actually tidy. Opening the "Tidy_Data.txt" without quotes with notepad in Windows will shatter your expectation!;) To prove that this is a Tidy Data especially when read into R, this section facilitates the notion by reading the "Tidy_Data.txt" without quotes file in the current working directory and views the data via the View() function. A summary of contents the dataset is invoked via the "str()" without quotes command.
   
-* A new tab (in Rstudio) should automatically appear with the heading "validate_data" without quotes depicting the contents of the tidy data which complies to all the principles discussed in the class:  
- 1)  Each column represents a variable and each row is used to hold the value of each observation. 
- 2)  The variable names should not consists of any symbols such as "-", "(", ")" & "." without quotes and should have lower casing. 
-3) In addition, the variable names should hold meaningful names.
+* A new tab (in Rstudio) should automatically appear with the heading "validate_data" without quotes depicting the contents of the tidy data which complies to all the principles discussed in the class:    
+ 1)  Each column represents a variable and each row is used to hold the value of each observation.   
+ 2)  The variable names should not consists of any symbols such as "-", "(", ")" & "." without quotes and should have lower casing.   
+3) In addition, the variable names should hold meaningful names.  
 
 ## Afterword:
 Thank you for your time and effort for reading this document, any feedback for further improvement are greatly appreciated!:) Hope we've gained something along the process and cheers to having completed the task!:)
