@@ -152,7 +152,7 @@ This part of the code basically searches for column names and replacing them wit
 ## Afterword:
 Thank you for your time and effort for reading this document, any feedback for further improvement are greatly appreciated!:) Hope we've gained something along the process and cheers to having completed the task!:)
  
-### End of Readme.md
+### End of README.md
 
 
 
