@@ -28,7 +28,7 @@ Dataset Details : Kindly refer to the readme.txt that comes along with the raw d
 
 
 ## 1. Code Philosopy:
-The philosophy when coding this assignment is that the code should be minimalist. This means:
+The philosophy when coding this assignment is that the code should be minimalist. This means:  
 1) Code should only minimal libraries/packages.  
 2) Convenience and independence of code execution without having to rely on package availability in a cross platform scenario.   
 3) Automate the code with minimal human interaction needed. Basically, sit back, hit run and view the outcome:)  
@@ -39,15 +39,15 @@ As reviewing 4 peers can prove to be a taxing task, I'll try my very best to smo
 
 Furthermore, each section of the code is tied back to the list of tasks defined in the Course project.There are 7 sections in total.The core 5 sections, 1-5, corresponds to each section of the list of tasks described in the Course Project page. EXTRA 1 & EXTRA 2 sections were written as an addition to automate the data acquiring and validating the script.
 
-The following depicts the code layout: (Each section will be explained in detail in the following section.)
+The following depicts the code layout: (Each section will be explained in detail in the following section.)  
 
-EXTRA 1: Get Data  
-1      : Merges Training and Test Data Set  
-2      : Extract Only Mean and Standard Deviation For Each Measurement  
-3      : Use Descriptive Activity Names To Name The Activities  
-4      : Substitute Columns Names With Descriptive Variable Names  
-5      : Create An Independent Tidy Data Set With The Average Of Each Variable For Each Activity & Each Subject  
-EXTRA 2: New Tidy Data Set Validation  
+EXTRA 1: Get Data    
+1      : Merges Training and Test Data Set    
+2      : Extract Only Mean and Standard Deviation For Each Measurement    
+3      : Use Descriptive Activity Names To Name The Activities    
+4      : Substitute Columns Names With Descriptive Variable Names    
+5      : Create An Independent Tidy Data Set With The Average Of Each Variable For Each Activity & Each Subject    
+EXTRA 2: New Tidy Data Set Validation    
 
 
 ## 3. Code Walkthrough:
