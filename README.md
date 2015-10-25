@@ -22,7 +22,7 @@ Dataset Details : Kindly refer to the readme.txt that comes along with the raw d
 Files in Github repository:
 
              1) Codebook.md - The codebook containing information of all data sets used & produced.
-             2) README.md   - File detailing information of entire project, from applications & library used to complete code walkthrough.
+             2) README.md   - File detailing information of entire project, from applications & library used to complete code walkthrough. Highly recommended to go through before going through other files for correct operation.
              3) Tidy_Data.txt - This is submitted here in addition to the textbox in the submission page as a backup.
              4) run_analysis.R - The R code which cleans the raw data set.
 				
