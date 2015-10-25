@@ -18,7 +18,13 @@ Packages used           : (Loaded by default with RStudio Version 0.99.467, no a
 Dataset name    : Human Activity Recognition Using Smartphones Dataset Version 1.0  
 Dataset origin  : [link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)   
 Dataset Details : Kindly refer to the readme.txt that comes along with the raw dataset for more information.
-				
+
+Files in Github repository:
+
+             1) Codebook.md - The codebook containing information of all data sets used & produced.
+             2) README.md   - File detailing information of entire project, from applications & library used to complete code walkthrough.
+             3) Tidy_Data.txt - This is submitted here in addition to the textbox in the submission page as a backup.
+             4) run_analysis.R - The R code which cleans the raw data set.
 				
 ## Table of Contents:
 1) Code Philosophy  
@@ -150,7 +156,7 @@ This part of the code basically searches for column names and replacing them wit
 3) In addition, variable names should hold meaningful & descriptive names for all column names/variables.  
 4) The "activity" column is a factor and each observation is descriptive denoted with the character activity labels instead of numerical values.
 
-## Afterword:
+## 4. Afterword:
 Thank you for your time and effort for reading this document, any feedback for further improvement are greatly appreciated!:) Hope we've gained something along the process and cheers to having completed the task!:)
  
 ### End of README.md
