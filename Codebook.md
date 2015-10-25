@@ -151,7 +151,78 @@ The detailed guide of the exact operation of the code to create tidy data is ava
 * Dimensions of the dataset: 180 rows and 68 columns.
 * No of variables : 68 (1 subject identifier, 1 activity ID & 66 features measurements)
 * Summary of the data:  
-  The tidy data contains a variable to hold the subject who carried out the experiment and 1 variable for its activity label. 66 means and standard deviation features measurements were extracted and averaged from the original raw dataset. Note that Features are normalized and bounded within [-1,1] and each feature vector is a row on the text file. Since the measurements are normalized, hence no unit of measurements are applicable and will be omitted.  
+  The tidy data contains a variable to hold the subject who carried out the experiment and 1 variable for its activity label. 66 means and standard deviation features measurements were extracted and averaged from the original raw dataset. Note that Features are normalized and bounded within [-1,1] and each feature vector is a row on the text file. Since the measurements are normalized, hence no unit of measurements are applicable and will be omitted.  The following lists all the variables present in the "Tidy_Data.txt" without quotes file:  
+
+		 [1] subject                                    
+		 [2] activity                                   
+		 [3] timebodyaccelerometermeanx                 
+		 [4] timebodyaccelerometermeany                 
+		 [5] timebodyaccelerometermeanz                 
+		 [6] timebodyaccelerometerstdx                  
+		 [7] timebodyaccelerometerstdy                  
+		 [8] timebodyaccelerometerstdz                  
+		 [9] timegravityaccelerometermeanx              
+		[10] timegravityaccelerometermeany              
+		[11] timegravityaccelerometermeanz              
+		[12] timegravityaccelerometerstdx               
+		[13] timegravityaccelerometerstdy               
+		[14] timegravityaccelerometerstdz               
+		[15] timebodyaccelerometerjerkmeanx             
+		[16] timebodyaccelerometerjerkmeany             
+		[17] timebodyaccelerometerjerkmeanz             
+		[18] timebodyaccelerometerjerkstdx              
+		[19] timebodyaccelerometerjerkstdy              
+		[20] timebodyaccelerometerjerkstdz              
+		[21] timebodygyroscopemeanx                     
+		[22] timebodygyroscopemeany                     
+		[23] timebodygyroscopemeanz                     
+		[24] timebodygyroscopestdx                      
+		[25] timebodygyroscopestdy                      
+		[26] timebodygyroscopestdz                      
+		[27] timebodygyroscopejerkmeanx                 
+		[28] timebodygyroscopejerkmeany                 
+		[29] timebodygyroscopejerkmeanz                 
+		[30] timebodygyroscopejerkstdx                  
+		[31] timebodygyroscopejerkstdy                  
+		[32] timebodygyroscopejerkstdz                  
+		[33] timebodyaccelerometermagnitudemean         
+		[34] timebodyaccelerometermagnitudestd          
+		[35] timegravityaccelerometermagnitudemean      
+		[36] timegravityaccelerometermagnitudestd       
+		[37] timebodyaccelerometerjerkmagnitudemean     
+		[38] timebodyaccelerometerjerkmagnitudestd      
+		[39] timebodygyroscopemagnitudemean             
+		[40] timebodygyroscopemagnitudestd              
+		[41] timebodygyroscopejerkmagnitudemean         
+		[42] timebodygyroscopejerkmagnitudestd          
+		[43] frequencybodyaccelerometermeanx            
+		[44] frequencybodyaccelerometermeany            
+		[45] frequencybodyaccelerometermeanz            
+		[46] frequencybodyaccelerometerstdx             
+		[47] frequencybodyaccelerometerstdy             
+		[48] frequencybodyaccelerometerstdz             
+		[49] frequencybodyaccelerometerjerkmeanx        
+		[50] frequencybodyaccelerometerjerkmeany        
+		[51] frequencybodyaccelerometerjerkmeanz        
+		[52] frequencybodyaccelerometerjerkstdx         
+		[53] frequencybodyaccelerometerjerkstdy         
+		[54] frequencybodyaccelerometerjerkstdz         
+		[55] frequencybodygyroscopemeanx                
+		[56] frequencybodygyroscopemeany                
+		[57] frequencybodygyroscopemeanz                
+		[58] frequencybodygyroscopestdx                 
+		[59] frequencybodygyroscopestdy                 
+		[60] frequencybodygyroscopestdz                 
+		[61] frequencybodyaccelerometermagnitudemean    
+		[62] frequencybodyaccelerometermagnitudestd     
+		[63] frequencybodyaccelerometerjerkmagnitudemean
+		[64] frequencybodyaccelerometerjerkmagnitudestd 
+		[65] frequencybodygyroscopemagnitudemean        
+		[66] frequencybodygyroscopemagnitudestd         
+		[67] frequencybodygyroscopejerkmagnitudemean    
+		[68] frequencybodygyroscopejerkmagnitudestd
+
+The detailed information for all variables in the "Tidy_Data.txt" file is as follows:
 
 **subject** : subject identifier, 30 subjects in total    
 Class       : integer    
@@ -160,7 +231,7 @@ Range       : 1 to 30
 **activity**: activity labels translated from the raw data with the following convention    
 Class       : factor  
 Levels      :	  
-        1 = WALKING  
+		1 = WALKING  
 		2 = WALKING_UPSTAIRS  
 		3 = WALKING_DOWNSTAIRS  
 		4 = SITTING  
