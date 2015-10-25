@@ -1,11 +1,11 @@
 # Readme for Getting & Cleaning Data Course Project
 
 Author			: ckchew8  
-Last Modified	: 24th of Oct 2015  
+Last Modified	        : 24th of Oct 2015  
 R Version		: 3.2.1  
-OS 				: Windows 7 64bit  
+OS 		        : Windows 7 64bit  
 Goal  			: To describe in detail the operation of Run_Analysis.R code.   
-Packages used   : (Loaded by default with RStudio Version 0.99.467, no additional library calls needed)  
+Packages used           : (Loaded by default with RStudio Version 0.99.467, no additional library calls needed)  
 
 				  1) "package:stats"     
 				  2) "package:graphics"   
