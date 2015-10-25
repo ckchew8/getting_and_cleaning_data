@@ -23,7 +23,7 @@ Here are the data for the project:
 # Study Design & Data Processing:
 
 ## Collection of Raw Data: 
-(The following section was extracted from "./ UCI HAR Dataset/README.txt" & "./ UCI HAR Dataset/features_info.txt" without quotes of the original dataset, kindly skip to "Creating The Tidy Data" section if you've gone through the listed files). This section is meant to document the codebook with information of both raw and tidied data set. 
+(The following section was extracted from "./ UCI HAR Dataset/README.txt" & "./ UCI HAR Dataset/features_info.txt" without quotes of the original dataset, kindly skip to "Creating The Tidy Data" section if you've gone through the listed files). This section is meant to document the codebook with information of the raw data set. 
 
 
 
